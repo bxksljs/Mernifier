@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generated Test Cases</title>
+</head>
+<body>
+  <h1>Generated Test Cases</h1>
+  <pre id="testCases">// Test Case for multiply
+test('multiply renders correctly', () => {
+  const { getByText, getByTestId } = render(<multiply />);
+  expect(getByText('Count:')).toBeInTheDocument();
+});
+
+// Test Case for Binary Expression
+
+test('Binary expression evaluates correctly', () => {
+
+  const result = 2 + 3;
+
+  expect(result).toEqual(5);
+
+});
+
+// Test Case for exampleVar
+
+test('exampleVar is initialized correctly', () => {
+
+  const exampleVar = yourMockFunction();
+
+  // Add assertions for exampleVar
+
+  expect(/* Your assertion here */).toBeTruthy();
+
+});
+
+// Test Case for exampleArray
+test('exampleArray renders correctly', () => {
+  const { getByText, getByTestId } = render(<exampleArray />);
+  expect(getByText('Count:')).toBeInTheDocument();
+});
+
+// Test Case for Array Expression
+
+test('Array is created correctly', () => {
+
+  const arr = [1, 2, 3];
+
+  expect(arr).toHaveLength(3);
+
+});
+
+// Test Case for exampleObject
+test('exampleObject renders correctly', () => {
+  const { getByText, getByTestId } = render(<exampleObject />);
+  expect(getByText('Count:')).toBeInTheDocument();
+});
+
+// Test Case for Object Expression
+
+test('Object is created correctly', () => {
+
+  const obj = { key: 'value' };
+
+  expect(obj).toHaveProperty('key', 'value');
+
+});
+
+// Test Case for exampleLogical
+test('exampleLogical renders correctly', () => {
+  const { getByText, getByTestId } = render(<exampleLogical />);
+  expect(getByText('Count:')).toBeInTheDocument();
+});
+
+// Test Case for Logical Expression
+
+test('Logical expression evaluates correctly', () => {
+
+  const result = true && false;
+
+  expect(result).toBeFalsy();
+
+});
+
+// Test Case for exampleUnary
+test('exampleUnary renders correctly', () => {
+  const { getByText, getByTestId } = render(<exampleUnary />);
+  expect(getByText('Count:')).toBeInTheDocument();
+});
+
+// Test Case for Unary Expression
+
+test('Unary expression evaluates correctly', () => {
+
+  const result = !true;
+
+  expect(result).toBeFalsy();
+
+});</pre>
+</body>
+</html>

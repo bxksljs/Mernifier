@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Test Case Generator</title>
+</head>
+<body>
+  <h1>Code Test Case Generator</h1>
+  <p>Paste your code below:</p>
+  <textarea id="userCode" rows="10" cols="50"></textarea>
+  <br>
+  <button onclick="generateTestCases()">Generate Test Cases</button>
+  <br>
+  <h2>Generated Test Cases:</h2>
+  <pre id="generatedTestCases"></pre>
+
+  <script>
+    async function generateTestCases() {
+      const userCode = document.getElementById('userCode').value;
+
+      const response = await fetch('/generate', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'text/plain',
+        },
+        body: userCode,
+      });
+
+      const generatedTestCases = await response.text();
+      document.getElementById('generatedTestCases').innerText = generatedTestCases;
+    }
+  </script>
+</body>
+</html>
