@@ -1,0 +1,17 @@
+{
+  "name": "express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai-http": "^4.4.0",
+    "chai-things": "^0.2.0",
+    "expressjs": "^1.0.1",
+    "mkdirp": "^3.0.1"
+  }
+}
